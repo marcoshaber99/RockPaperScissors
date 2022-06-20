@@ -3,20 +3,39 @@
     <head>
         <title>Rock Paper Scissors Game!</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
 
 
-        <div class="container">
-            <h1>Game of Rock-Paper-Scissors</h1>
-            <button onclick="game()">Start Game</button>
-            <p>This game is played on the console.
-                To open the console, <br>press 'CTRL+Shift+J' on <u>Windows</u>
-                or 'Option+j' on <u>MAC</u>.
-            </p>
+        <div class="score">
+            <h1 class="ties">TIES: 0</h1>
+        </div>
+        <div class="winner">
+            <hi class="winner"></hi>
+            <button class="reset" onclick="resetGame()">Play Again?</button>
+        </div>
+        <div class="playerSection">
+            <h3 class="playerChoice"></h3>
+            <h3 class="playerScore">Score: 0</h3>
+            <div class="playerImages">
+                <img src="./images/rock-final.png" alt="rock image" class="playerImg" id="rock">
+                <img src="./images/paper-final.png" alt="paper image" class="playerImg" id="paper">
+                <img src="./images/scissors-final.png" alt="scissors image" class="playerImg" id="scissors">
+            </div>
+        </div>
+
+        <div class="computerSection">
+            <h3 class="computerChoice"></h3>
+            <h3 class="computerScore">Score: 0</h3>
+            <div class="computerImages">
+                <img src="./images/rock-final.png" alt="rock image" class="rock">
+                <img src="./images/paper-final.png" alt="paper image" class="paper">
+                <img src="./images/scissors-final.png" alt="scissors image" class="scissors">
+            </div>
         </div>
 
     </body>
 
-    <script src="script.js"></script>
+
 </html>
