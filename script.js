@@ -130,3 +130,5 @@ function setWins() {
 }
 
 startGame();
+
+//finish
